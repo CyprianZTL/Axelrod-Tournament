@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Axelrod Tournament Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Axelrod Tournament Results</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Strategy</th>
+            {% for strategy in results.keys() %}
+            <th>{{ strategy }}</th>
+            {% endfor %}
+        </tr>
+        </thead>
+        <tbody>
+        {% for strategy, opponents in results.items() %}
+        <tr>
+            <td>{{ strategy }}</td>
+            {% for opponent, score in opponents.items() %}
+            <td>{{ score }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
