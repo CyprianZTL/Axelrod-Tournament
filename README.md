@@ -13,8 +13,3 @@ Axelrod Tournament Simulator to aplikacja symulująca iterowany dylemat więźni
 - Flask
 - HTML/CSS
 - Jinja2
-
-## 📦 Instalacja
-1. Sklonuj repozytorium:
-   ```bash
-   git clone https://github.com/yourusername/axelrod-tournament-simulator.git
